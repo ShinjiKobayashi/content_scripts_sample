@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "My extension",
+  "description": "This extension inject a Google page",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.co.jp/"],
+      "js": ["jquery-2.2.3.js", "myscript.js"]
+    }
+  ]
+
+}
